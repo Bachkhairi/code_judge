@@ -1,4 +1,4 @@
-# Competitive Programming Code Judge (Flask + DevOps)
+# Competitive Programming Code Judge 
 
 ## Overview
 This project is a **competitive programming code judge** built with **Flask**, following **DevOps best practices** using **Jenkins** and **Docker**. It provides an automated, secure, and scalable environment for handling code submissions during programming competitions.
