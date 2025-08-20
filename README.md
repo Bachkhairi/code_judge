@@ -4,7 +4,14 @@
 This project is a **competitive programming code judge** built with **Flask**, following **DevOps best practices** using **Jenkins** and **Docker**. It provides an automated, secure, and scalable environment for handling code submissions during programming competitions.
 
 The project is provisioned with **Vagrant** to set up two virtual machines:
+---
 
+## 🎥 Project Demo
+
+A full walkthrough of the system's functionality and architecture is available on LinkedIn:
+[**Watch the Video Demo on LinkedIn**](https://www.linkedin.com/feed/update/urn:li:activity:7227015195930349569/)
+
+---
 1. **Application VM**
    - Hosts the **Flask application**.
    - **Jenkins** manages the CI/CD pipeline:
