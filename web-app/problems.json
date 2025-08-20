@@ -1,0 +1,59 @@
+[
+    {
+        "id": 1,
+        "name": "watermelon",
+        "description": "One hot summer day Pete and his friend Billy decided to buy a watermelon. They chose the biggest and the ripest one, in their opinion. After that the watermelon was weighed, and the scales showed w kilos. They rushed home, dying of thirst, and decided to divide the berry, however they faced a hard problem.\r\n\r\nPete and Billy are great fans of even numbers, that's why they want to divide the watermelon in such a way that each of the two parts weighs even number of kilos, at the same time it is not obligatory that the parts are equal. The boys are extremely tired and want to start their meal as soon as possible, that's why you should help them and find out, if they can divide the watermelon in the way they want. For sure, each of them should get a part of positive weight.\r\n\r\nInput\r\nThe first (and the only) input line contains integer number w (1\u2009\u2264\u2009w\u2009\u2264\u2009100) \u2014 the weight of the watermelon bought by the boys.\r\n\r\nOutput\r\nPrint YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.",
+        "time_limit": "1",
+        "memory_limit": "64",
+        "input_examples": [
+            "8\r\n"
+        ],
+        "output_examples": [
+            "YES\r\n"
+        ],
+        "test_cases": [
+            {
+                "input": "8",
+                "output": "YES\r\n"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "test",
+        "description": "test",
+        "time_limit": "1",
+        "memory_limit": "50",
+        "input_examples": [
+            "5"
+        ],
+        "output_examples": [
+            "YES"
+        ],
+        "test_cases": [
+            {
+                "input": "5",
+                "output": "YES"
+            }
+        ]
+    },
+    {
+        "id": 6,
+        "name": "Simple Calculation",
+        "description": "In the ancient land of Draconia, dragons are the protectors of the realm. To keep them strong and healthy, the villagers must feed them a special type of dragon fruit. The amount of dragon fruit a dragon eats each day is calculated using a magical formula.\r\n\r\nEach day, the required amount of dragon fruit is calculated as twice the number of scales on the dragon's body, plus one. The number of scales on a dragon varies daily due to their growth and shedding cycles.\r\n\r\nAs the village's chief dragon feeder, you need to determine the amount of dragon fruit needed each day based on the number of scales on the dragon.\r\n\r\nInput:\r\nThe input consists of a single integer n (1 \u2264 n \u2264 1000), which represents the number of scales on the dragon.\r\n\r\n\r\nOutput:\r\nPrint a single integer, the amount of dragon fruit required for the dragon today.",
+        "time_limit": "1",
+        "memory_limit": "64",
+        "input_examples": [
+            "5\r\n2\r\n43\r\n1000"
+        ],
+        "output_examples": [
+            "11\r\n5\r\n87\r\n2001"
+        ],
+        "test_cases": [
+            {
+                "input": "5\r\n2\r\n43\r\n1000",
+                "output": "11\r\n5\r\n87\r\n2001"
+            }
+        ]
+    }
+]

@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <h1>{{ problem.name }}</h1>
+    <p class="description">{{ problem.description }}</p>
+    <p><strong>Time limit:</strong> {{ problem.time_limit }} seconds</p>
+    <p><strong>Memory limit:</strong> {{ problem.memory_limit }} MB</p>
+
+    <h2>Examples</h2>
+    <div>
+        {% for input, output in zip(problem.input_examples, problem.output_examples) %}
+            <div class="example-box">
+                <div class="copy-container">
+                    <p><strong>Input:</strong></p>
+                    <button class="copy-button" data-copy="{{ input }}">Copy</button>
+                </div>
+                <pre>{{ input }}</pre>
+                <div class="copy-container">
+                    <p><strong>Output:</strong></p>
+                    <button class="copy-button" data-copy="{{ output }}">Copy</button>
+                </div>
+                <pre>{{ output }}</pre>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h2>Submit Your Code</h2>
+    <form id="codeForm" action="/submit" method="post">
+        <label for="language">Language:</label>
+        <select name="language" id="language">
+            <option value="python">Python</option>
+            <option value="java">Java</option>
+            <option value="cpp">C++</option>
+        </select>
+        <br><br>
+        <label for="code">Code:</label><br>
+        <textarea name="code" id="code" rows="10" cols="50"></textarea><br><br>
+        <input type="hidden" name="problem_id" value="{{ problem.id }}">
+        <button type="submit">Submit</button>
+    </form>
+    <div id="result"></div>
+{% endblock %}
+

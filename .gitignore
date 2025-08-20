@@ -1,0 +1,30 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.env
+.venv/
+venv/
+ENV/
+env/
+
+# dotenv environment variables file
+*.env
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Byte-compiled / logs
+*.log
+*.sqlite3
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+.vagrant

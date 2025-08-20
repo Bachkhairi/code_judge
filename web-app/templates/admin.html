@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <div class="container">
+        <h1>Admin Panel</h1>
+        <h2>Add New Problem</h2>
+        <form method="post" action="{{ url_for('add_problem') }}">
+            <div class="form-group">
+                <label for="name">Problem Name:</label>
+                <input type="text" name="name" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" rows="5" class="description" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="time_limit">Time Limit (seconds):</label>
+                <input type="number" name="time_limit" id="time_limit" required>
+            </div>
+            <div class="form-group">
+                <label for="memory_limit">Memory Limit (MB):</label>
+                <input type="number" name="memory_limit" id="memory_limit" required>
+            </div>
+            <div class="form-group">
+                <label for="input_examples">Input Examples (one per line):</label>
+                <textarea name="input_examples" id="input_examples" rows="3"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="output_examples">Output Examples (one per line):</label>
+                <textarea name="output_examples" id="output_examples" rows="3"></textarea>
+            </div>
+            <h3>Test Cases</h3>
+            <div class="form-group">
+                <label for="test_inputs">Test Inputs (one per line):</label>
+                <textarea name="test_inputs" id="test_inputs" rows="5"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="test_outputs">Test Outputs (one per line):</label>
+                <textarea name="test_outputs" id="test_outputs" rows="5"></textarea>
+            </div>
+            <button type="submit">Add Problem</button>
+        </form>
+        <h2>Existing Problems</h2>
+        <ul>
+            {% for problem in problems %}
+                <li>
+                    <span id="prob_name">{{ problem.name }}</span>
+                    <form method="post" action="{{ url_for('delete_problem', problem_id=problem.id) }}">
+                        <button type="submit">Delete</button>
+                    </form>
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
+{% endblock %}
+
