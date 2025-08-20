@@ -26,7 +26,7 @@ The project is provisioned with **Vagrant** to set up two virtual machines:
 ---
 
 ## Architecture
-![alt text](image.png)
+![alt text](images/architecture.jpeg.png)
 ---
 
 ## Benefits of Jenkins and Docker
